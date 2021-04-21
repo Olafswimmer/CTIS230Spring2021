@@ -1,19 +1,40 @@
 body {  
     color:darkgreen; 
     background-color: lavenderblush; 
-    font-size:large;
+    font-size: 1.25em;
+    font-family: "Times New Roman", Times, serif;
 }
 h1 {  
     color:darkblue;  
+    width: fit-content;
+    font-family: fantasy, sans-serif;
+    text-shadow: .1em .1em lightblue;
 }
 h2 {
     color: darkmagenta;
     background-color: thistle; 
     width: fit-content;
+    font-style:italic;
 }
 em {
-    background-color: skyblue;
+    background-color: lightpink;
 }
 strong {
-    background-color: lightsalmon;
+    background-color: lightpink;
+    font-weight: 700;
+}
+p {
+    font-family: "Brush Script MT";
+}
+a:link {  
+    color:mediumorchid;  
+}
+a:visited {  
+    color: mediumvioletred;  
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: royalblue
 }
