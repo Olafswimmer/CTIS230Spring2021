@@ -1,9 +1,19 @@
 body {  
-    color:green;  
+    color:darkgreen; 
+    background-color: lavenderblush; 
+    font-size:large;
 }
 h1 {  
-    color:royalblue;  
+    color:darkblue;  
 }
 h2 {
-    color: purple
+    color: darkmagenta;
+    background-color: thistle; 
+    width: fit-content;
+}
+em {
+    background-color: skyblue;
+}
+strong {
+    background-color: lightsalmon;
 }
