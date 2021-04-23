@@ -1,8 +1,10 @@
 body {  
-    color:darkgreen; 
-    background-color: lavenderblush; 
-    font-size: 1.25em;
+    color:purple; 
+    background-color: azure; 
     font-family: "Times New Roman", Times, serif;
+    font-size:1.25em;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 h1 {  
     color:darkblue;  
@@ -14,17 +16,26 @@ h2 {
     color: darkmagenta;
     background-color: thistle; 
     width: fit-content;
-    font-style:italic;
 }
-em {
+h1, h2 {
+    font-style: italic;
+}
+em, p strong {
     background-color: lightpink;
 }
 strong {
-    background-color: lightpink;
     font-weight: 700;
 }
 p {
-    font-family: "Brush Script MT";
+    font-family: "Brush Script MT", sans-serif;
+    text-align: justify;
+}
+img {
+    width: 20%;
+    border-style: double;
+    border-width: 10px;
+    color: gold;
+    float:right;
 }
 a:link {  
     color:mediumorchid;  
@@ -37,4 +48,49 @@ a:hover {
 }
 a:active {
     color: royalblue
+}
+p.characters {
+    font-style: italic;
+    padding: 0px 50px;
+}
+img#dugimagehome {
+    width: 100%;;
+}
+h1#homepageheading {
+    font-size: 5em;
+    font-style: normal;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: .1em;
+    margin-bottom: .1em ;
+}
+div.paragraphs {
+    color: royalblue;
+    padding: 0px 50px;
+}
+div#homepagelinks {
+    padding: 25px;
+    padding-left: 0px;
+}
+div.header {  
+    display:flex; 
+    border: mediumorchid;
+    border-style: dotted;
+    margin:0% 15%;
+    justify-content: center;
+    justify-content:space-between; 
+    background-color: skyblue;
+}
+div.headerstuff {
+    padding:2.5%;
+}
+div.footer {
+    display:flex;
+    flex-direction: column ;
+    border-style: dotted;
+    padding: 15px;
+    background-color: skyblue;
+}
+div.footerstuff {
+    color: black;
 }
