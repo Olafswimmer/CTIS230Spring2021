@@ -2,23 +2,22 @@ body {
     color:purple; 
     background-color: azure; 
     font-family: "Times New Roman", Times, serif;
-    font-size:1.25em;
+    font-size:1.5em;
     margin-left: 15%;
     margin-right: 15%;
 }
-h1 {  
-    color:darkblue;  
+h1 {   
     width: fit-content;
     font-family: fantasy, sans-serif;
     text-shadow: .1em .1em lightblue;
 }
 h2 {
-    color: darkmagenta;
     background-color: thistle; 
     width: fit-content;
 }
 h1, h2 {
     font-style: italic;
+    color : darkblue;
 }
 em, p strong {
     background-color: lightpink;
@@ -72,6 +71,7 @@ div#homepagelinks {
     padding: 25px;
     padding-left: 0px;
 }
+
 div.header {  
     display:flex; 
     border: mediumorchid;
@@ -79,7 +79,9 @@ div.header {
     margin:0% 15%;
     justify-content: center;
     justify-content:space-between; 
-    background-color: skyblue;
+}
+div.header, div.footer {
+    background-color: lightskyblue;
 }
 div.headerstuff {
     padding:2.5%;
@@ -89,7 +91,6 @@ div.footer {
     flex-direction: column ;
     border-style: dotted;
     padding: 15px;
-    background-color: skyblue;
 }
 div.footerstuff {
     color: black;
