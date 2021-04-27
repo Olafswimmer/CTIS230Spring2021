@@ -95,3 +95,8 @@ div.footer {
 div.footerstuff {
     color: black;
 }
+button#thebutton,button#anotherbutton {
+    color: purple;
+    background-color: lightskyblue;
+    font-size: 1.5em;
+}
