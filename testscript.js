@@ -1,4 +1,5 @@
 myitem = document.getElementById("firsttest");
+olafimage = document.getElementById("olafimage");
 //This method can return a single element by that element's id, in this case "firsttest", which provides as an arguement for the method
 myitem.addEventListener("click", onClick);
 //This element serves as a way to bind the "click" command with myitem, and the name onClick, so that when "myitem" is clicked, a function occurs.
@@ -35,4 +36,9 @@ textentry.addEventListener("change", onChange);
 function onChange() {  
     newtext = myinput.value;  
     otheritem.innerHTML = newtext;  
+}
+imgbutton = document.getElementById("imgbutton");  
+imgbutton.addEventListener("click", onButtonClick3);
+function onButtonClick3() {
+    olafimage.style.display = "block";
 }

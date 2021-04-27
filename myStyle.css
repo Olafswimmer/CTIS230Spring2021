@@ -95,8 +95,16 @@ div.footer {
 div.footerstuff {
     color: black;
 }
-button#thebutton,button#anotherbutton {
+button#thebutton,button#anotherbutton, button#imgbutton {
     color: purple;
     background-color: lightskyblue;
     font-size: 1.5em;
+}
+input#myinput {
+    color: lightskyblue;
+    background-color: purple;
+    font-size: 1.5em;
+}
+img#olafimage {
+    display:none;
 }
