@@ -19,8 +19,9 @@ thebutton = document.getElementById("thebutton");
 otheritem = document.getElementById("buttontest");
 thebutton.addEventListener("click", onButtonClick);
 function onButtonClick() {  
-    otheritem.style.color = "black";  
+    otheritem.style.color = "orange";  
     otheritem.style.fontSize = "1.5em";
+    otheritem.style.fontStyle = "normal";
 }
 anotherbutton = document.getElementById("anotherbutton");  
 anotheritem = document.getElementById("anotherbuttontest");
@@ -28,4 +29,10 @@ anotherbutton.addEventListener("click", onButtonClick2);
 function onButtonClick2() {  
     anotheritem.style.color = "green";  
     anotheritem.style.fontSize = "1.5em";
+}
+textentry = document.getElementById("myinput");  
+textentry.addEventListener("change", onChange);
+function onChange() {  
+    newtext = myinput.value;  
+    otheritem.innerHTML = newtext;  
 }
