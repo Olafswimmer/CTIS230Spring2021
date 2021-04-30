@@ -3,8 +3,8 @@ body {
     background-color: azure; 
     font-family: "Times New Roman", Times, serif;
     font-size: 1.5em;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 h1 {   
     width: fit-content;
@@ -25,16 +25,17 @@ em, p strong {
 strong {
     font-weight: 700;
 }
-p {
+p, div.buttontest {
     font-family: "Brush Script MT", sans-serif;
     text-align: justify;
 }
-img {
-    width: 20%;
+img.contentimg, img#remy {
+    width: 15%;
     border-style: double;
     border-width: 10px;
     color: gold;
     float:right;
+    margin-left: 0.75em;
 }
 a:link {  
     color:mediumorchid;  
@@ -53,7 +54,10 @@ p.characters {
     padding: 0px 50px;
 }
 img#dugimagehome {
-    width: 100%;;
+    width: 98%;
+    border-style: double;
+    border-width: 10px;
+    color: gold;
 }
 h1#homepageheading {
     font-size: 5em;
@@ -71,20 +75,24 @@ div#homepagelinks {
     padding: 25px;
     padding-left: 0px;
 }
-
+button#thebutton,button#anotherbutton, button#imgbutton {
+    color: purple;
+    background-color: lightskyblue;
+    font-size: 1.5em;
+}
 div.header {  
     display:flex; 
     border: mediumorchid;
     border-style: dotted;
-    margin:0% 15%;
+    margin:0% 8%;
     justify-content: center;
-    justify-content:space-between; 
 }
 div.header, div.footer {
     background-color: lightskyblue;
 }
 div.headerstuff {
     padding:2.5%;
+    font-size: 1.5em;
 }
 div.footer {
     display:flex;
@@ -95,11 +103,7 @@ div.footer {
 div.footerstuff {
     color: black;
 }
-button#thebutton,button#anotherbutton, button#imgbutton {
-    color: purple;
-    background-color: lightskyblue;
-    font-size: 1.5em;
-}
+
 input#myinput {
     color: lightskyblue;
     background-color: purple;
@@ -108,3 +112,44 @@ input#myinput {
 img#olafimage {
     display:none;
 }
+img#remy {
+    width: 5%;
+}
+@media (max-width: 815px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.8em;
+    }
+    div.paragraphs, p.characters {
+        padding: 0px 10px;
+    }
+    img#dugimagehome {
+        width: 94%;
+    }
+}
+@media (max-width: 1025px) {
+    div.headerstuff, button#thebutton, button#anotherbutton, button#imgbutton, input#myinput {
+        font-size: .9em;
+    }    
+}
+@media (orientation: portrait) {
+    div.header {
+        margin: 0%;
+    }
+}
+@media (orientation: landscape) {
+    body {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    p.characters, div.paragraphs {
+        padding: 0px 25px;
+    }
+    img#dugimghome {
+        width: 94%;
+    }
+    div.headerstuff {
+        font-size: 1.5em;
+    }
+  }
