@@ -1,5 +1,5 @@
 myitem = document.getElementById("firsttest");
-olafimage = document.getElementById("olafimage");
+olafimg = document.getElementById("olafimage");
 //This method can return a single element by that element's id, in this case "firsttest", which provides as an arguement for the method
 myitem.addEventListener("click", onClick);
 //This element serves as a way to bind the "click" command with myitem, and the name onClick, so that when "myitem" is clicked, a function occurs.
@@ -40,5 +40,23 @@ function onChange() {
 imgbutton = document.getElementById("imgbutton");  
 imgbutton.addEventListener("click", onButtonClick3);
 function onButtonClick3() {
-    olafimage.style.display = "block";
+    olafimg.style.display = "block";
+}
+
+remydiv = document.getElementById("remy");
+remyimage = document.getElementById("remyimg");
+remydiv.addEventListener("click", makeBigImage);
+theLargeView = document.getElementById("largeview");
+theLargeView.addEventListener("click", hideBigImage);
+
+function hideBigImage() {
+    theLargeView.classList.add("dontshow");
+    theLargeView.innerHTML = "";
+}
+function makeBigImage(event) {
+    console.log(event);
+    bigimage = document.createElement("img");
+    bigimage.src = event.target.src;
+    theLargeView.appendChild(bigimage);
+    theLargeView.classList.remove("dontshow");
 }
